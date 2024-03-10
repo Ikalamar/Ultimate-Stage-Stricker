@@ -233,7 +233,7 @@ h1{
     }
 
     .ruleset {
-        display: block;
+        display: flex;
       }
 
     .footer{
