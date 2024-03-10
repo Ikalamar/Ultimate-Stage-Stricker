@@ -1,1 +1,3 @@
-﻿# Ultimate_Stage_Stricker
+﻿# Ultimate Stage Stricker
+
+La beta est ouverte !
