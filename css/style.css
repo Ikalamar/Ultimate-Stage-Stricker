@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+:root {
+    --text-color: white;
+    --dark-blue: rgb(2, 0, 56);
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    color : var(--text-color);
+    background-color: var(--dark-blue);
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+
+/*                     NAVBAR                      */
+
+header{
+    background-color: rgb(1, 0, 29);
+    padding: 20px;
+}
+
+.navbar{
+    flex-direction: row;
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+    color : var(--text-color);
+    padding: 0px;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a{
+    color : var(--text-color);
+    text-decoration: none;
+}
+
+.navbar li{
+    display: contents;
+    
+}
+
+.navbar .link{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+/*                     CORPS                      */
+
+.content{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    min-height: 600px;
+    padding: 30px;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.ruleset-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logoRuleset img{
+    width: 200px;
+    height: 200px;
+}
+
+.logoRuleset {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.ruleset{
+    display:flex; 
+    justify-content:space-around; 
+    flex-wrap: wrap;
+    align-items:center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+}
+
+.ruleset li{
+    border-radius: 10px;
+}
+
+.ruleset p{
+    font-size: 18px;
+    margin-top: -36px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px 0;
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    background: rgba(36, 36, 36, 0.8);
+}
+
+.ruleset img{
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.ruleset .gentlemen.selected{
+    border: 3px solid green;
+    background-color: green;
+    margin: -3px;
+}
+
+.ruleset .gentlemen.selected img{
+    opacity:75%;
+}
+
+.ruleset .stage.banned{
+    border: 3px solid red;
+    background-color: red;
+    margin: -3px;
+}
+
+.ruleset .stage.banned img{
+    opacity: 75%;
+}
+
+.btn{
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn.valid{
+    border: 2px solid lightgreen;
+    color: lightgreen;
+}
+
+.btn.valid:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
+.btn.reset{
+    border: 2px solid red;
+    color: red;
+}
+
+.btn.reset:hover{
+    background-color: red;
+    color: black;
+}
+
+/*                     FOOTER                      */
+.footer{
+    background-color: rgb(1, 0, 29);
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer a{
+    color : var(--text-color);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) and (max-device-width : 1368px) {
+    .content{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+    }
+
+    .content{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .linkLMD {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .linkLMD img{
+        text-align: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .ruleset {
+        display: block;
+      }
+
+    .footer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+}

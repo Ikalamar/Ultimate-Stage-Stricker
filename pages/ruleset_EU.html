@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleset La Mans Dale</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li><img src="../../img/logo.png" alt="" width="50px">Ultimate Stage Striker</li>
+            <li class="link"><a href="../index.html">Rulesets</a></li>
+        </ul> 
+    </header>
+
+    <div class="content">
+        <h1>Ruleset Europeen</h1>
+
+        <div id="listStage" class="visible">
+            <h2>Liste des stages :</h2>
+            <ul class="ruleset">
+                <li class="stage" id="BF" onclick="banned('BF')">
+                    <img src="../img/stages/Battlefield.jpg" alt="" width="350px">
+                    <p>Battlefield</p>
+                </li>
+                <li class="stage" id="SBF" onclick="banned('SBF')">
+                    <img src="../img/stages/Small-Battlefield.jpg" alt="" width="350px">
+                    <p>Small Battlefield</p>
+                </li>
+                <li class="stage" id="FD" onclick="banned('FD')">
+                    <img src="../img/stages/Final_Destination.jpg" alt="" width="350px">
+                    <p>Final Destination</p>
+                </li>
+                <li class="stage" id="YS" onclick="banned('YS')">
+                    <img class="imgMap" src="../img/stages/Yoshi_s_Story.jpg" alt="" width="350px">
+                    <p class="nomMap">Yoshi's Story</p>
+                </li>
+                <li class="stage" id="PS2" onclick="banned('PS2')">
+                    <img src="../img/stages/Pokémon_Stadium_2.jpg" alt="" width="350px">
+                    <p>Pokémon Stadium 2</p>
+                </li>
+                <li class="stage" id="SV" onclick="banned('SV')">
+                    <img src="../img/stages/Smashville.jpg" alt="" width="350px">
+                    <p>Smashville</p>
+                </li>
+                <li class="stage" id="TC" onclick="banned('TC')">
+                    <img src="../img/stages/Town_and_City.jpg" alt="" width="350px">
+                    <p>Town and City</p>
+                </li>
+                <li class="stage" id="KPL" onclick="banned('KPL')">
+                    <img class="imgMap" src="../img/stages/Kalos_Pokémon_League.jpg" alt="" width="350px">
+                    <p class="nomMap">Kalos Pokémon League</p>
+                </li>
+                <li class="stage" id="HB" onclick="banned('HB')">
+                    <img src="../img/stages/Hollow_Bastion.jpg" alt="" width="350px">
+                    <p>Hollow Bastion</p>
+                </li>
+            </ul>
+            <button class="btn reset" onclick="resetBan()">Reset</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <p>Ikalamar 2024</p>
+            Twitter : <a target="_blank" href="https://www.twitter.com/Ikalamar_">@Ikalamar_</a>
+        </div>
+    </footer>
+</body>
+
+</html>
