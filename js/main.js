@@ -31,7 +31,7 @@ function banned(id){
 }
 
 function resetBan(){
-    for(var i=0; i < 9; i++){
+    for(var i=0; i < document.getElementsByClassName("stage").length; i++){
         let id = document.getElementsByClassName("stage")[i].getAttribute("id");
         document.getElementById(id).classList.remove("banned");
     }
