@@ -24,7 +24,7 @@
     <div class="content">
         <h1>Ruleset Crococorp</h1>
 
-        <div id="listStage" class="visible">
+        <div id="listStage" class="hidden">
             <h2>Liste des stages :</h2>
             <ul class="ruleset">
                 <li class="stage" id="BF" onclick="banned('BF')">
@@ -39,10 +39,6 @@
                     <img src="../img/stages/Final_Destination.jpg" alt="" width="350px">
                     <p>Final Destination</p>
                 </li>
-                <li class="stage" id="LC" onclick="banned('LC')">
-                    <img class="imgMap" src="../img/stages/Lylat_Cruise.jpg" alt="" width="350px">
-                    <p class="nomMap">Lylat Cruise</p>
-                </li>
                 <li class="stage" id="PS2" onclick="banned('PS2')">
                     <img src="../img/stages/Pokémon_Stadium_2.jpg" alt="" width="350px">
                     <p>Pokémon Stadium 2</p>
@@ -55,16 +51,44 @@
                     <img src="../img/stages/Town_and_City.jpg" alt="" width="350px">
                     <p>Town and City</p>
                 </li>
-                <li class="stage" id="NC" onclick="banned('NC')">
-                    <img class="imgMap" src="../img/stages/Northern_Cave.jpg" alt="" width="350px">
-                    <p class="nomMap">Northern Cave</p>
-                </li>
                 <li class="stage" id="HB" onclick="banned('HB')">
                     <img src="../img/stages/Hollow_Bastion.jpg" alt="" width="350px">
                     <p>Hollow Bastion</p>
                 </li>
+                <li class="stage" id="GM1" onclick="banned('GM1')">
+                    <img class="imgMap" src="../img/stages/Gentlemen.jpg" alt="" width="350px">
+                    <p class="nomMap">Gentlemen n°1</p>
+                </li>
+                <li class="stage" id="GM2" onclick="banned('GM2')">
+                    <img class="imgMap" src="../img/stages/Gentlemen.jpg" alt="" width="350px">
+                    <p class="nomMap">Gentlemen n°2</p>
+                </li>
             </ul>
             <button class="btn reset" onclick="resetBan()">Reset</button>
+            <button class="btn" onclick="window.location.reload();">Revenir au gentlemens</button>
+        </div>
+
+        <div id="listGentlemen" class="visible">
+            <h2>Choisissez 2 stages gentlemens :</h2>
+            <ul class="ruleset">
+                <li id="YS" class="gentlemen" onclick="selected('YS')">
+                    <img id="imgYS" src="../img/stages/Yoshi_s_Story.jpg" alt="" width="350px">
+                    <p id="textYS">Yoshi's Story</p>
+                </li>
+                <li id="LC" class="gentlemen" onclick="selected('LC')">
+                    <img id="imgLC" src="../img/stages/Lylat_Cruise.jpg" alt="" width="350px">
+                    <p id="textLC">Lylat Cruise</p>
+                </li>
+                <li id="KPL" class="gentlemen" onclick="selected('KPL')">
+                    <img id="imgKPL" src="../img/stages/Kalos_Pokémon_League.jpg" alt="" width="350px">
+                    <p id="textKPL">Kalos Pokémon League</p>
+                </li>
+                <li id="NC" class="gentlemen" onclick="selected('NC')">
+                    <img id="imgNC" src="../img/stages/Northern_Cave.jpg" alt="" width="350px">
+                    <p id="textNC">Northern Cave</p>
+                </li>
+            </ul>
+            <button class="btn valid" onclick="setGentlemen()">Valider les stages Gentlemen</button>
         </div>
     </div>
 
